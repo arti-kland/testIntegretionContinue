@@ -49,11 +49,11 @@ describe("Create a new user", () => {
         await page.$eval( '.status-display', el => el.click() );
         await page.screenshot({path: './tests/img/newUser4.png'});
         // remplit l'input UserName
-        await page.type('input[ng-model="newUserParams.username"]', 'polalaPieuvre');
+        await page.type('input[ng-model="newUserParams.username"]', 'liya');
         // remplit l'input PassWord
-        await page.type('input[ng-model="newUserParams.userPassword"]', 'pola1234');
+        await page.type('input[ng-model="newUserParams.userPassword"]', 'liyadu92');
         // remplit l'input Email
-        await page.type('input[ng-model="newUserParams.userEmail"]', 'pola@pola.fr');
+        await page.type('input[ng-model="newUserParams.userEmail"]', 'liya@annecy.fr');
         // on attent que l'élément ".status-display new-user-add" soit chargé
         await page.waitForSelector('.new-user-add');
         await page.$eval( '.new-user-add', el => el.click() );
