@@ -25,7 +25,7 @@ describe("Tests login", () => {
         await page.$eval('form>input[name="login"]', el => el.click());
         const login = await page.$eval('body', e => e.innerHTML);
         await page.screenshot({path: './tests/img/basic-homeclikloginconnect.png'});
-        expect(login).toContain("toto")
+        expect(login).toContain("admin")
     }, timeout);
 
 
