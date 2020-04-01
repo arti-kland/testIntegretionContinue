@@ -29,7 +29,7 @@ describe("Tests login", () => {
     }, timeout);
 
 
-        // cette fonction est lancée avant chaque test de cette
+    // cette fonction est lancée avant chaque test de cette
     // série de tests
     beforeAll(async () => {
         // ouvrir un onglet dans le navigateur
